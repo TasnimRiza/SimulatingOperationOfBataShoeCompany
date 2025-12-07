@@ -164,21 +164,8 @@ public class RMG6PromotionsFxml
         this.endDateTC = endDateTC;
     }
 
-    public RMG6PromotionsFxml(TextField nameTF, Label promotionDetailsLab, TableColumn nameTC, TableColumn typeTC, ComboBox statusCB, TextField promotionIDTF, ComboBox promotionOfferCB, DatePicker endDateDP, TableView promotionTV, TableColumn promotionIDTC, TableColumn statusTC, DatePicker startDateDP, TableColumn startDateTC, TableColumn endDateTC) {
-        this.nameTF = nameTF;
-        this.promotionDetailsLab = promotionDetailsLab;
-        this.nameTC = nameTC;
-        this.typeTC = typeTC;
-        this.statusCB = statusCB;
-        this.promotionIDTF = promotionIDTF;
-        this.promotionOfferCB = promotionOfferCB;
-        this.endDateDP = endDateDP;
-        this.promotionTV = promotionTV;
-        this.promotionIDTC = promotionIDTC;
-        this.statusTC = statusTC;
-        this.startDateDP = startDateDP;
-        this.startDateTC = startDateTC;
-        this.endDateTC = endDateTC;
+    public RMG6PromotionsFxml(){
+
     }
 
     @javafx.fxml.FXML

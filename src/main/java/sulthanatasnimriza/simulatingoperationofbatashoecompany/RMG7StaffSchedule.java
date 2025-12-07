@@ -173,22 +173,8 @@ public class RMG7StaffSchedule
         this.messageLab = messageLab;
     }
 
-    public RMG7StaffSchedule(TextArea taskDescriptionTA, TableColumn previousShiftTC, TableColumn nameTC, TableView employeeListTV, TableColumn taskTC, DatePicker dateDP, TableColumn dateTC, TableColumn shiftTC, TextField employeeIDTF, TableColumn employeeIDTC, TableColumn assignedEmployeeTC, TextArea rosterTA, TableColumn roleTC, TableView scheduleTV, Label messageLab) {
-        this.taskDescriptionTA = taskDescriptionTA;
-        this.previousShiftTC = previousShiftTC;
-        this.nameTC = nameTC;
-        this.employeeListTV = employeeListTV;
-        this.taskTC = taskTC;
-        this.dateDP = dateDP;
-        this.dateTC = dateTC;
-        this.shiftTC = shiftTC;
-        this.employeeIDTF = employeeIDTF;
-        this.employeeIDTC = employeeIDTC;
-        this.assignedEmployeeTC = assignedEmployeeTC;
-        this.rosterTA = rosterTA;
-        this.roleTC = roleTC;
-        this.scheduleTV = scheduleTV;
-        this.messageLab = messageLab;
+    public RMG7StaffSchedule(){
+
     }
 
     @javafx.fxml.FXML

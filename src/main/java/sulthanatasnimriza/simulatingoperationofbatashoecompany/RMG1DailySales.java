@@ -153,22 +153,7 @@ public class RMG1DailySales
     @javafx.fxml.FXML
     private DatePicker dateDatePicker;
 
-    public RMG1DailySales(ComboBox pamentTypeComboBox, DatePicker dateDatePicker, TableColumn orderIdTableColumn, TableColumn totalAmountTableColumn, TextField avgOrderValueTextField, Button applyFilterButton, TableColumn dateTableColumn, BarChart salesperformanceChart, TableColumn paymentTypeTableColumn, ComboBox categoryComboBox, TableView dailySalesTableTV, TextField totalSalesTextField, TextField profitMarginTextField, TableColumn customerTableColumn, TableColumn categoryTableColumn) {
-        this.pamentTypeComboBox = pamentTypeComboBox;
-        this.dateDatePicker = dateDatePicker;
-        this.orderIdTableColumn = orderIdTableColumn;
-        this.totalAmountTableColumn = totalAmountTableColumn;
-        this.avgOrderValueTextField = avgOrderValueTextField;
-        ApplyFilterButton = applyFilterButton;
-        this.dateTableColumn = dateTableColumn;
-        this.salesperformanceChart = salesperformanceChart;
-        this.paymentTypeTableColumn = paymentTypeTableColumn;
-        this.categoryComboBox = categoryComboBox;
-        this.dailySalesTableTV = dailySalesTableTV;
-        this.totalSalesTextField = totalSalesTextField;
-        this.profitMarginTextField = profitMarginTextField;
-        this.customerTableColumn = customerTableColumn;
-        this.categoryTableColumn = categoryTableColumn;
+    public RMG1DailySales() {
     }
 
     @javafx.fxml.FXML

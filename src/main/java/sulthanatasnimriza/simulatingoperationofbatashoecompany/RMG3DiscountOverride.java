@@ -123,17 +123,7 @@ public class RMG3DiscountOverride
         this.originalPriceTC = originalPriceTC;
     }
 
-    public RMG3DiscountOverride(TableColumn productTC, TextArea managerCommentTA, Label notificationMessagesLab, TableColumn requestedPriceTC, TableColumn reasonTC, TableColumn orderIDTC, TextField selectedRequstIDTF, TableColumn requestIDTC, TableView discountRequestTV, TableColumn originalPriceTC) {
-        this.productTC = productTC;
-        this.managerCommentTA = managerCommentTA;
-        this.notificationMessagesLab = notificationMessagesLab;
-        this.requestedPriceTC = requestedPriceTC;
-        ReasonTC = reasonTC;
-        this.orderIDTC = orderIDTC;
-        this.selectedRequstIDTF = selectedRequstIDTF;
-        this.requestIDTC = requestIDTC;
-        this.discountRequestTV = discountRequestTV;
-        this.originalPriceTC = originalPriceTC;
+    public RMG3DiscountOverride() {
     }
 
     @javafx.fxml.FXML

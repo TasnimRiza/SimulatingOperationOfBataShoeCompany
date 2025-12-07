@@ -121,17 +121,7 @@ public class RMG2ApproveOrders
     @javafx.fxml.FXML
     private TableColumn paymentStatusTC;
 
-    public RMG2ApproveOrders(TableColumn orderStatusTC, TableView orderStatusTV, TableColumn dateTC, TableColumn stockStatusTC, ComboBox orderApproveOrRejectOB, TextField orderIDTF, ComboBox orderStatusOB, TableColumn orderIDTC, TableColumn paymentStatusTC, TextArea orderDetailsTxtArea) {
-        this.orderStatusTC = orderStatusTC;
-        this.orderStatusTV = orderStatusTV;
-        DateTC = dateTC;
-        this.stockStatusTC = stockStatusTC;
-        this.orderApproveOrRejectOB = orderApproveOrRejectOB;
-        this.orderIDTF = orderIDTF;
-        this.orderStatusOB = orderStatusOB;
-        this.orderIDTC = orderIDTC;
-        this.paymentStatusTC = paymentStatusTC;
-        this.orderDetailsTxtArea = orderDetailsTxtArea;
+    public RMG2ApproveOrders() {
     }
 
     @javafx.fxml.FXML

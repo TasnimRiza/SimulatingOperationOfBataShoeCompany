@@ -14,6 +14,11 @@ public class RMG8Report
     private TextArea reportSummaryTA;
     @javafx.fxml.FXML
     private LineChart summaryChart;
+
+    public RMG8Report(){
+
+    }
+
     @javafx.fxml.FXML
     private ComboBox reportTypeCB;
 

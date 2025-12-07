@@ -1,20 +1,34 @@
 package sulthanatasnimriza.simulatingoperationofbatashoecompany;
 
 import javafx.event.ActionEvent;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.*;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class RetailManagerDashboard
 {
-
     @javafx.fxml.FXML
     private Button processProductReturnsButton;
+    @javafx.fxml.FXML
+    private Button approveCustomerOrdersButton;
+    @javafx.fxml.FXML
+    private Button monitorDailyStoreSalesButton;
+    @javafx.fxml.FXML
+    private Button scheduleStaffandAssignTasksButton;
+    @javafx.fxml.FXML
+    private Button generatePerformanceReportsButton;
+    @javafx.fxml.FXML
+    private Button handleDiscountButton;
+    @javafx.fxml.FXML
+    private Button launchorEndStorePromotionsButton;
+    @javafx.fxml.FXML
+    private Button ManageStoreInventoryButton;
 
     public Button getProcessProductReturnsButton() {
         return processProductReturnsButton;
-    }
-
-    public void setProcessProductReturnsButton(Button processProductReturnsButton) {
-        this.processProductReturnsButton = processProductReturnsButton;
     }
 
     @Override
@@ -29,6 +43,10 @@ public class RetailManagerDashboard
                 ", launchorEndStorePromotionsButton=" + launchorEndStorePromotionsButton +
                 ", ManageStoreInventoryButton=" + ManageStoreInventoryButton +
                 '}';
+    }
+
+    public void setProcessProductReturnsButton(Button processProductReturnsButton) {
+        this.processProductReturnsButton = processProductReturnsButton;
     }
 
     public Button getApproveCustomerOrdersButton() {
@@ -88,97 +106,166 @@ public class RetailManagerDashboard
     }
 
     @javafx.fxml.FXML
-    private Button approveCustomerOrdersButton;
-
-    public RetailManagerDashboard(Button processProductReturnsButton, Button approveCustomerOrdersButton, Button monitorDailyStoreSalesButton, Button scheduleStaffandAssignTasksButton, Button generatePerformanceReportsButton, Button handleDiscountButton, Button launchorEndStorePromotionsButton, Button manageStoreInventoryButton) {
-        this.processProductReturnsButton = processProductReturnsButton;
-        this.approveCustomerOrdersButton = approveCustomerOrdersButton;
-        this.monitorDailyStoreSalesButton = monitorDailyStoreSalesButton;
-        this.scheduleStaffandAssignTasksButton = scheduleStaffandAssignTasksButton;
-        this.generatePerformanceReportsButton = generatePerformanceReportsButton;
-        this.handleDiscountButton = handleDiscountButton;
-        this.launchorEndStorePromotionsButton = launchorEndStorePromotionsButton;
-        ManageStoreInventoryButton = manageStoreInventoryButton;
-    }
-
-    @javafx.fxml.FXML
-    private Button monitorDailyStoreSalesButton;
-    @javafx.fxml.FXML
-    private Button scheduleStaffandAssignTasksButton;
-    @javafx.fxml.FXML
-    private Button generatePerformanceReportsButton;
-    @javafx.fxml.FXML
-    private Button handleDiscountButton;
-    @javafx.fxml.FXML
-    private Button launchorEndStorePromotionsButton;
-    @javafx.fxml.FXML
-    private Button ManageStoreInventoryButton;
-
-    @javafx.fxml.FXML
     public void initialize() {
     }
 
-    @Deprecated
-    public void viewApplyCouponandMakePaymentPanel(ActionEvent actionEvent) {
-    }
+    @javafx.fxml.FXML
+    public void viewApproveCustomerOrdersPanel(ActionEvent actionEvent) throws IOException {
+        // Load FXML
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("RM_G2_ApproveOrders.fxml"));
 
-    @Deprecated
-    public void viewTrackOrderandRequestReturnPanel(ActionEvent actionEvent) {
-    }
+        // Create Scene from FXML
+        Scene scene = new Scene(fxmlLoader.load());
 
-    @Deprecated
-    public void viewProvideShippingandContactDetailspanel(ActionEvent actionEvent) {
-    }
+        // Create Stage
+        Stage stage = new Stage();
 
-    @Deprecated
-    public void viewsearchSpecificShoeModelPanel(ActionEvent actionEvent) {
-    }
+        stage.setTitle("RM_G2_ApproveOrders");
 
-    @Deprecated
-    public void ViewChooseDeliveryorPickupOptionPannel(ActionEvent actionEvent) {
-    }
+        // Set scene to stage
+        stage.setScene(scene);
 
-    @Deprecated
-    public void viewAddProducttoCartButtonPanel(ActionEvent actionEvent) {
-    }
-
-    @Deprecated
-    public void viewBrowseShoesbyCategorypanel(ActionEvent actionEvent) {
-    }
-
-    @Deprecated
-    public void viewProductDetailsandReviewsPanel(ActionEvent actionEvent) {
+        // Show the Stage
+        stage.show();
     }
 
     @javafx.fxml.FXML
-    public void viewApproveCustomerOrdersPanel(ActionEvent actionEvent) {
+    public void viewGeneratePerformanceReports(ActionEvent actionEvent) throws IOException{
+        // Load FXML
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("RM_G8_Reports.fxml"));
+
+        // Create Scene from FXML
+        Scene scene = new Scene(fxmlLoader.load());
+
+        // Create Stage
+        Stage stage = new Stage();
+
+        stage.setTitle("RM_G8_Reports");
+
+        // Set scene to stage
+        stage.setScene(scene);
+
+        // Show the Stage
+        stage.show();
     }
 
     @javafx.fxml.FXML
-    public void viewGeneratePerformanceReports(ActionEvent actionEvent) {
+    public void viewProcessProductReturnsPanel(ActionEvent actionEvent) throws IOException {
+        // Load FXML
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("RM_G5_Returns.fxml"));
+
+        // Create Scene from FXML
+        Scene scene = new Scene(fxmlLoader.load());
+
+        // Create Stage
+        Stage stage = new Stage();
+
+        stage.setTitle("RM_G5_Returns");
+
+        // Set scene to stage
+        stage.setScene(scene);
+
+        // Show the Stage
+        stage.show();
     }
 
     @javafx.fxml.FXML
-    public void viewProcessProductReturnsPanel(ActionEvent actionEvent) {
+    public void viewMonitorDailyStoreSalesPanel(ActionEvent actionEvent) throws IOException {
+        // Load FXML
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("RM_G1_DailySales.fxml"));
+
+        // Create Scene from FXML
+        Scene scene = new Scene(fxmlLoader.load());
+
+        // Create Stage
+        Stage stage = new Stage();
+
+        stage.setTitle("RM_G1_DailySales");
+
+        // Set scene to stage
+        stage.setScene(scene);
+
+        // Show the Stage
+        stage.show();
     }
 
     @javafx.fxml.FXML
-    public void viewMonitorDailyStoreSalesPanel(ActionEvent actionEvent) {
+    public void viewScheduleStaffandAssignTasks(ActionEvent actionEvent) throws IOException {
+        // Load FXML
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("RM_G7_StaffSchedule.fxml"));
+
+        // Create Scene from FXML
+        Scene scene = new Scene(fxmlLoader.load());
+
+        // Create Stage
+        Stage stage = new Stage();
+
+        stage.setTitle("RM_G7_StaffSchedule");
+
+        // Set scene to stage
+        stage.setScene(scene);
+
+        // Show the Stage
+        stage.show();
     }
 
     @javafx.fxml.FXML
-    public void viewScheduleStaffandAssignTasks(ActionEvent actionEvent) {
+    public void viewHandleDiscountPanel(ActionEvent actionEvent) throws IOException{
+        // Load FXML
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("RM_G3_DiscountOverride.fxml"));
+
+        // Create Scene from FXML
+        Scene scene = new Scene(fxmlLoader.load());
+
+        // Create Stage
+        Stage stage = new Stage();
+
+        stage.setTitle("RM_G3_DiscountOverride");
+
+        // Set scene to stage
+        stage.setScene(scene);
+
+        // Show the Stage
+        stage.show();
     }
 
     @javafx.fxml.FXML
-    public void viewHandleDiscountPanel(ActionEvent actionEvent) {
+    public void viewManageStoreInventoryPannel(ActionEvent actionEvent) throws IOException{
+        // Load FXML
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("RM_G4_Inventory.fxml"));
+
+        // Create Scene from FXML
+        Scene scene = new Scene(fxmlLoader.load());
+
+        // Create Stage
+        Stage stage = new Stage();
+
+        stage.setTitle("RM_G4_Inventory");
+
+        // Set scene to stage
+        stage.setScene(scene);
+
+        // Show the Stage
+        stage.show();
     }
 
     @javafx.fxml.FXML
-    public void viewManageStoreInventoryPannel(ActionEvent actionEvent) {
-    }
+    public void viewLaunchorEndStorePromotionsPanel(ActionEvent actionEvent) throws IOException {
+        // Load FXML
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("RM_G6_Promotions.fxml"));
 
-    @javafx.fxml.FXML
-    public void viewLaunchorEndStorePromotionsPanel(ActionEvent actionEvent) {
+        // Create Scene from FXML
+        Scene scene = new Scene(fxmlLoader.load());
+
+        // Create Stage
+        Stage stage = new Stage();
+
+        stage.setTitle("RM_G6_Promotions");
+
+        // Set scene to stage
+        stage.setScene(scene);
+
+        // Show the Stage
+        stage.show();
     }
 }

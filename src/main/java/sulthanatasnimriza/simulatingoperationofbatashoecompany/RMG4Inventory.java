@@ -132,18 +132,8 @@ public class RMG4Inventory
     @javafx.fxml.FXML
     private TextArea commentTA;
 
-    public RMG4Inventory(TableView inventoryTV, TableColumn reorderLevelTC, TableColumn nameTC, TableColumn productIDTC, TableColumn statusTC, TableColumn categoryTC, TableColumn currentStockTC, TextField productIDTF, TextField restockQuantityTF, TextArea commentTA, Label messageLab) {
-        this.inventoryTV = inventoryTV;
-        this.reorderLevelTC = reorderLevelTC;
-        this.nameTC = nameTC;
-        this.productIDTC = productIDTC;
-        this.statusTC = statusTC;
-        this.categoryTC = categoryTC;
-        this.currentStockTC = currentStockTC;
-        this.productIDTF = productIDTF;
-        this.restockQuantityTF = restockQuantityTF;
-        this.commentTA = commentTA;
-        this.messageLab = messageLab;
+    public RMG4Inventory(){
+
     }
 
     @javafx.fxml.FXML
